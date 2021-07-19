@@ -100,8 +100,8 @@
           "style": "powerline",
           "invert_powerline": true,
           "powerline_symbol": "\uE0B2",
-          "foreground": "#003544",
-          "background": "#0087D8",
+          "foreground": "black",
+          "background": "blue",
           "properties": {
             "prefix": " \uE235 ",
             "display_version": false,
