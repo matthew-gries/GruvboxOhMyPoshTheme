@@ -71,6 +71,15 @@
             "color_background": true,
             "local_changes_color": "yellow"
           }
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "white",
+          "properties": {
+            "prefix": "",
+            "text": ""
+          }
         }
       ]
     }
