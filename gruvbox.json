@@ -1,0 +1,151 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "final_space": true,
+  "console_title": true,
+  "console_title_style": "template",
+  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "vertical_offset": 1,
+      "segments": [
+        {
+          "type": "exit",
+          "style": "powerline",
+          "foreground": "red",
+          "background": "#2e2e2f",
+          "properties": {
+            "display_exit_code": false,
+            "always_enabled": false,
+            "color_background": false,
+            "error_color": "red",
+            "error_icon": "\uF7D3"
+          }
+        },
+        {
+          "type": "os",
+          "style": "powerline",
+          "background": "#2e2e2f",
+          "foreground": "white",
+          "properties": {
+            "postfix": " ",
+            "prefix": " "
+          }
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "black",
+          "background": "lightBlue",
+          "properties": {
+            "prefix": " ",
+            "style": "full",
+            "folder_separator_icon": "/"
+          }
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "black",
+          "background": "green",
+          "properties": {
+            "display_status_detail": true,
+            "branch_icon": " ",
+            "branch_identical_icon": "≡",
+            "branch_ahead_icon": "↑",
+            "branch_behind_icon": "↓",
+            "branch_gone": "≢",
+            "local_working_icon": "",
+            "local_staged_icon": "",
+            "stash_count_icon": "",
+            "commit_icon": "▷ ",
+            "tag_icon": "▶ ",
+            "rebase_icon": "Ɫ ",
+            "cherry_pick_icon": "✓ ",
+            "merge_icon": "◴ ",
+            "no_commits_icon": "[no commits]",
+            "status_separator_icon": " │",
+            "status_colors_enabled": true,
+            "color_background": true,
+            "local_changes_color": "yellow"
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "battery",
+          "style": "powerline",
+          "invert_powerline": true,
+          "powerline_symbol": "\uE0B2",
+          "foreground": "black",
+          "background": "lightBlue",
+          "properties": {
+            "battery_icon": "\f583",
+            "color_background": true,
+            "charged_color": "lightBlue",
+            "charging_color": "#33DD2D",
+            "discharging_color": "#FFCD58",
+            "postfix": "\uF295 \uf583 "
+          }
+        },
+        {
+          "type": "python",
+          "style": "powerline",
+          "invert_powerline": true,
+          "powerline_symbol": "\uE0B2",
+          "foreground": "#003544",
+          "background": "#0087D8",
+          "properties": {
+            "prefix": " \uE235 ",
+            "display_version": false,
+            "display_mode": "context",
+            "display_virtual_env": true
+          }
+        },
+        {
+          "type": "time",
+          "style": "powerline",
+          "invert_powerline": true,
+          "powerline_symbol": "\uE0B2",
+          "foreground": "white",
+          "background": "#2e2e2f",
+          "properties": {
+            "prefix": "<#fff> \uf64f </>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "root",
+          "style": "plain",
+          "foreground": "red",
+          "properties": {
+            "prefix": " ",
+            "root_icon": "\u2605"
+          }
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "white",
+          "properties": {
+            "prefix": " ",
+            "text": "➜"
+          }
+        }
+      ]
+    }
+  ]
+}
